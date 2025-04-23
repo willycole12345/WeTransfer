@@ -14,6 +14,7 @@ A backend-only Laravel API for uploading and sharing files with a secure, time-l
 - File stats (downloads, size, expiry)
 - Artisan cleanup command to delete expired files
 
+
 ---
 
 #  Tech Stack
@@ -24,6 +25,10 @@ A backend-only Laravel API for uploading and sharing files with a secure, time-l
 - Optional: Laravel Sanctum (for future auth)
 
 ---
+
+# Post collection 
+
+Wetransfer.postman_collection.json
 
 # Setup Instructions
 
@@ -116,7 +121,7 @@ Response
             }
 
         ]
-        
+
     }
 }
 
@@ -125,3 +130,6 @@ Auto-Delete Expired Uploads
 Command:
 php artisan clean:expired-uploads
 
+
+Post collection 
+Wetransfer.postman_collection.json

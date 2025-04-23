@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "10c7568f-cc21-4fd8-9f1d-1a66117a1cff",
+		"name": "Wetransfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6226108"
+	},
+	"item": [
+		{
+			"name": "http://WeTransfer-style.test/api/upload",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files[]",
+							"type": "file",
+							"src": [
+								"/Users/williamcole/Downloads/Certificate of completion for certificate.pdf",
+								"/Users/williamcole/Downloads/Distorting Reality.docx",
+								"/Users/williamcole/Downloads/Certificate of completion for certificate.pdf",
+								"/Users/williamcole/Downloads/Distorting Reality.docx"
+							]
+						},
+						{
+							"key": "expires_in",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "email_to_notify",
+							"value": "cole.williams84@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://WeTransfer-style.test/api/upload",
+					"protocol": "http",
+					"host": [
+						"WeTransfer-style",
+						"test"
+					],
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wetransfer-style.test/api/stats/{token}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wetransfer-style.test/api/stats/6FXrGlHUFvXkmmgDpNTCe4opQFkYFOw7",
+					"protocol": "http",
+					"host": [
+						"wetransfer-style",
+						"test"
+					],
+					"path": [
+						"api",
+						"stats",
+						"6FXrGlHUFvXkmmgDpNTCe4opQFkYFOw7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wetransfer-style.test/api/download/token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "Rosemarycole12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://wetransfer-style.test/api/download/6FXrGlHUFvXkmmgDpNTCe4opQFkYFOw7",
+					"protocol": "http",
+					"host": [
+						"wetransfer-style",
+						"test"
+					],
+					"path": [
+						"api",
+						"download",
+						"6FXrGlHUFvXkmmgDpNTCe4opQFkYFOw7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
