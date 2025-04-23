@@ -82,13 +82,18 @@ Upload Stats
 GET /api/uploads/stats/{token}
 
 Response
+
 {
+
     "data": {
+
         "Expires_day": "2025-04-28 16:07:06",
         "Number_of_files": 4,
         "TotalSize": 7492248,
         "TotalDownloads": 4,
+
         "files": [
+
             {
                 "File_name": "Certificate of completion for certificate.pdf",
                 "File_size": 3736379,
@@ -109,7 +114,9 @@ Response
                 "File_size": 9745,
                 "Downloads": 1
             }
+
         ]
+        
     }
 }
 
