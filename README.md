@@ -128,6 +128,9 @@ Auto-Delete Expired Uploads
 Command:
 php artisan clean:expired-uploads
 
+mail sending using queue 
+Command
+php artisan queue:work 
 
 Post collection 
 Wetransfer.postman_collection.json
