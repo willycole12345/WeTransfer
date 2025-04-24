@@ -35,9 +35,7 @@ Wetransfer.postman_collection.json
 1. ** Clone repo & install dependencies **
 
 
-git clone https://github.com/yourusername/wetransfer-api.git
-
-cd wetransfer-api
+cd wetransfer
 composer install
 
 Then in config/filesystems.php, add:
