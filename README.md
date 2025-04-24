@@ -65,7 +65,7 @@ password_confirmation   string	require password for protected download
 Reponse:-
 {
   "success": true,
-  "download_link": "https://yourdomain.com/api/download/{token}"
+  "download_link": "https://baseurl/api/download/{token}"
 }
 
 
